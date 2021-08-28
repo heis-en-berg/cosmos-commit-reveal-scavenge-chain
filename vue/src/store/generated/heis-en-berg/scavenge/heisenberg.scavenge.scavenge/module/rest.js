@@ -130,8 +130,69 @@ export class HttpClient {
     }
 }
 /**
- * @title scavenge/genesis.proto
+ * @title scavenge/commit.proto
  * @version version not set
  */
 export class Api extends HttpClient {
+    constructor() {
+        super(...arguments);
+        /**
+         * No description
+         *
+         * @tags Query
+         * @name QueryCommitAll
+         * @summary Queries a list of commit items.
+         * @request GET:/heis-en-berg/scavenge/scavenge/commit
+         */
+        this.queryCommitAll = (query, params = {}) => this.request({
+            path: `/heis-en-berg/scavenge/scavenge/commit`,
+            method: "GET",
+            query: query,
+            format: "json",
+            ...params,
+        });
+        /**
+         * No description
+         *
+         * @tags Query
+         * @name QueryCommit
+         * @summary Queries a commit by index.
+         * @request GET:/heis-en-berg/scavenge/scavenge/commit/{index}
+         */
+        this.queryCommit = (index, params = {}) => this.request({
+            path: `/heis-en-berg/scavenge/scavenge/commit/${index}`,
+            method: "GET",
+            format: "json",
+            ...params,
+        });
+        /**
+         * No description
+         *
+         * @tags Query
+         * @name QueryScavengeAll
+         * @summary Queries a list of scavenge items.
+         * @request GET:/heis-en-berg/scavenge/scavenge/scavenge
+         */
+        this.queryScavengeAll = (query, params = {}) => this.request({
+            path: `/heis-en-berg/scavenge/scavenge/scavenge`,
+            method: "GET",
+            query: query,
+            format: "json",
+            ...params,
+        });
+        /**
+         * No description
+         *
+         * @tags Query
+         * @name QueryScavenge
+         * @summary Queries a scavenge by index.
+         * @request GET:/heis-en-berg/scavenge/scavenge/scavenge/{index}
+         */
+        this.queryScavenge = (index, params = {}) => this.request({
+            path: `/heis-en-berg/scavenge/scavenge/scavenge/${index}`,
+            method: "GET",
+            format: "json",
+            ...params,
+        });
+    }
 }

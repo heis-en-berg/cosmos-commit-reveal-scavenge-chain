@@ -23,6 +23,8 @@ export interface RpcStatus {
   details?: ProtobufAny[];
 }
 
+export type ScavengeMsgCommitSolutionResponse = object;
+
 export type ScavengeMsgSubmitScavengeResponse = object;
 
 export type QueryParamsType = Record<string | number, any>;

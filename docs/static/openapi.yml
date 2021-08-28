@@ -25850,6 +25850,8 @@ definitions:
       response type.
   heisenberg.scavenge.scavenge.MsgCommitSolutionResponse:
     type: object
+  heisenberg.scavenge.scavenge.MsgRevealSolutionResponse:
+    type: object
   heisenberg.scavenge.scavenge.MsgSubmitScavengeResponse:
     type: object
   ibc.applications.transfer.v1.DenomTrace:

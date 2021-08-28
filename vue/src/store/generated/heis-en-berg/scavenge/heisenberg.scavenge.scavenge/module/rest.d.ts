@@ -10,6 +10,7 @@ export interface RpcStatus {
     details?: ProtobufAny[];
 }
 export declare type ScavengeMsgCommitSolutionResponse = object;
+export declare type ScavengeMsgRevealSolutionResponse = object;
 export declare type ScavengeMsgSubmitScavengeResponse = object;
 export declare type QueryParamsType = Record<string | number, any>;
 export declare type ResponseFormat = keyof Omit<Body, "body" | "bodyUsed">;

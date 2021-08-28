@@ -1,0 +1,12 @@
+syntax = "proto3";
+package heisenberg.scavenge.scavenge;
+
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/heis-en-berg/scavenge/x/scavenge/types";
+
+// GenesisState defines the scavenge module's genesis state.
+message GenesisState {
+    // this line is used by starport scaffolding # genesis/proto/state
+    // this line is used by starport scaffolding # ibc/genesis/proto
+}
